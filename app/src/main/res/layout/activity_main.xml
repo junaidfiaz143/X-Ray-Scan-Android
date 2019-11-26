@@ -3,36 +3,104 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:background="@drawable/background_app_bar" />
-
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true">
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/background_info"
+            android:padding="10dp"
+            android:src="@drawable/info" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-85dp"
+        android:layout_marginLeft="-85dp"
+        android:layout_marginBottom="-100dp"
+        android:background="@drawable/decorator_box"
+        android:rotation="30" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <RelativeLayout
+            android:id="@+id/lytPrediction"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/background_prediction">
+
+            <TextView
+                android:id="@+id/lblPrediction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/raleway"
+                android:text="...prediction..."
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgXray"
+            android:layout_width="324dp"
+            android:layout_height="324dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/background_xray_placeholder"
+            android:onClick="openGallery" />
 
         <TextView
-            android:id="@+id/txtProb"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@drawable/background_btn"
-            android:padding="20dp"
-            android:text="Prediction"
+            android:layout_below="@id/imgXray"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/raleway"
+            android:text="touch above to upload XRay image"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_btn">
+
+        <TextView
+            android:id="@+id/btnPredict"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/raleway"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="PREDICT"
             android:textAlignment="center"
-            android:textColor="#555555" />
+            android:textColor="#fff" />
 
         <ProgressBar
             android:id="@+id/prgClassification"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"/>
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/raleway" />
     </RelativeLayout>
 
 

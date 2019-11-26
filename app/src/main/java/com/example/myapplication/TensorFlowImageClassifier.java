@@ -82,7 +82,7 @@ public class TensorFlowImageClassifier {
 
         Log.d("RESULT", "" + result);
 
-        Toast.makeText(ctx, "[]: " + result[0][0], Toast.LENGTH_SHORT).show();
+//        Toast.makeText(ctx, "[]: " + result[0][0], Toast.LENGTH_SHORT).show();
 
         return getSortedResult(result);
     }
