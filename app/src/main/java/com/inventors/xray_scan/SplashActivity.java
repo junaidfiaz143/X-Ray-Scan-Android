@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.inventors.xray_scan;
 
 import android.content.Intent;
 import android.os.Bundle;

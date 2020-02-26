@@ -17,6 +17,7 @@
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:background="@drawable/background_info"
+            android:onClick="onAboutActivity"
             android:padding="10dp"
             android:src="@drawable/info" />
     </RelativeLayout>
@@ -49,7 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:fontFamily="@font/raleway"
+                android:fontFamily="@font/clan_bold"
                 android:text="...prediction..."
                 android:textColor="#fff"
                 android:textSize="24sp"
@@ -62,7 +63,7 @@
             android:layout_height="324dp"
             android:layout_centerInParent="true"
             android:background="@drawable/background_xray_placeholder"
-            android:onClick="openGallery" />
+            android:onClick="chooseXRayImage" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -70,7 +71,7 @@
             android:layout_below="@id/imgXray"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/raleway"
+            android:fontFamily="@font/clan_book"
             android:text="touch above to upload XRay image"
             android:textSize="12sp" />
 
@@ -81,15 +82,15 @@
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/background_btn">
+        android:layout_marginBottom="10dp">
 
         <TextView
             android:id="@+id/btnPredict"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
-            android:fontFamily="@font/raleway"
+            android:background="@drawable/background_btn"
+            android:fontFamily="@font/clan_book"
             android:gravity="center_vertical|center_horizontal"
             android:text="PREDICT"
             android:textAlignment="center"
@@ -99,9 +100,9 @@
             android:id="@+id/prgClassification"
             android:layout_width="24dp"
             android:layout_height="24dp"
+            android:fontFamily="@font/clan_book"
             android:layout_centerInParent="true"
-            android:fontFamily="@font/raleway" />
+            android:indeterminateTint="#000" />
     </RelativeLayout>
-
 
 </RelativeLayout>

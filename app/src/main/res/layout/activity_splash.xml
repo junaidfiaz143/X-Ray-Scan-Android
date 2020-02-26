@@ -36,6 +36,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/txtTitle"
         android:layout_centerHorizontal="true"
-        android:fontFamily="@font/raleway"
+        android:fontFamily="@font/clan_book"
         android:text="@string/slogan" />
 </RelativeLayout>
